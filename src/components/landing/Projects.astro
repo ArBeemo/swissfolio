@@ -64,9 +64,7 @@ function calculateAosDuration(index) {
                     0{index + 1}.
                   </p>
                   <p class="italic shrink-0">{project.title}</p>
-                  <p class="text-3xl  mt-3 leading-8 indent-9">
-                    {project.description}
-                  </p>
+                  <p class="text-3xl mt-3 leading-8 indent-9" set:html={project.description}></p>
                 </div>
               </div>
             </a>
